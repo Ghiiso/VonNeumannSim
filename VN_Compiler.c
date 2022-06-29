@@ -274,9 +274,10 @@ void convertiTesto(FILE *f,linea *l){
 }
 
 
-int main(){
-
-    FILE *fp = fopen(FILENAME,"r");
+int main(int argc,char** argv){
+    FILE *fp;
+    if(argc==1) fp = fopen(FILENAME,"r");
+    else fp = fopen(argv[1],"r");
     rewind(fp);
     fflush(fp);
     char nomeComando[7];
