@@ -297,4 +297,5 @@ int main(int argc,char** argv){
         }
         else num_linea++;
     }
+    system("pause");
 }
